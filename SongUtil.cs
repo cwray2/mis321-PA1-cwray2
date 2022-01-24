@@ -17,8 +17,6 @@ namespace mis321_PA1_cwray2
 
         public static List<Song> AddSong(List<Song> allSongs)
         {
-            allSongs.Sort();
-            allSongs.Reverse();
             allSongs.Add(new Song(){
                 ID=Guid.NewGuid(), 
                 Title=Console.ReadLine(), 

@@ -24,11 +24,13 @@ namespace mis321_PA1_cwray2
 
                 if(menuChoice == 1)
                 {
+                    SortAndReverse(allSongs);
                     SongUtil.PrintAllSongs(allSongs);
                     HoldYourHorses();
                 }
                 else if(menuChoice == 2)
                 {
+                    SortAndReverse(allSongs);
                     SongUtil.PrintAllSongs(allSongs);
                     SongUtil.AddSong(allSongs);
                     SongFile.SaveSongs(allSongs);
@@ -36,6 +38,7 @@ namespace mis321_PA1_cwray2
                 }
                 else if(menuChoice == 3)
                 {
+                    SortAndReverse(allSongs);
                     SongUtil.PrintAllSongs(allSongs);
                     SongUtil.DeleteSong(allSongs);
                     SongFile.SaveSongs(allSongs);
@@ -43,6 +46,12 @@ namespace mis321_PA1_cwray2
                 }
                 menuChoice = GetMenuChoice();
             }
+        }
+
+        static void SortAndReverse(List<Song> allSongs)
+        {
+            allSongs.Sort();
+            allSongs.Reverse();
         }
 
         static int GetMenuChoice()  //method to get the users choice for the menu
