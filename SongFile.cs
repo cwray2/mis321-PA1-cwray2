@@ -18,7 +18,7 @@ namespace mis321_PA1_cwray2
             }
             catch (Exception e)
             {
-                Console.WriteLine("The file was not found!", e);
+                Console.WriteLine("The file was not found :(", e);
                 return allSongs;
             }
 
