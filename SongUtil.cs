@@ -17,6 +17,8 @@ namespace mis321_PA1_cwray2
 
         public static List<Song> AddSong(List<Song> allSongs)
         {
+            Console.WriteLine("Enter a song to add: ");
+    
             allSongs.Add(new Song(){
                 ID=Guid.NewGuid(), 
                 Title=Console.ReadLine(), 
